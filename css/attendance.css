@@ -1,0 +1,61 @@
+@media(min-width:600px) {
+    html {
+        font-size: 70.2%;
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    * {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        transition: all .2s linear;
+    }
+
+    .blur {
+        /* The blue effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+
+    main {
+        width: auto;
+        height: auto;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: 1px solid black;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+    }
+
+    .container {
+        padding: 4rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container  h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-bottom: 5.5rem;
+        color: black;
+    }
+
+    .icon {
+        font-size: 15rem;
+        color: rgba(52, 52, 198, 0.739);
+    }
+    
+}

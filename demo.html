@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domo</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+input[type=text]{
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 3s;
+}
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 4px 0 dodgerblue;
+}
+.inputWithIcon input[type=text]{
+    padding-left: 40px;
+}
+.inputWithIcon{
+    position: relative;
+}
+.inputWithIcon i{
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: .3s;
+}
+.inputWithIcon input[type=text]:focus + i{
+    color: dodgerblue;
+}
+</style>
+
+</head>
+<body>
+<div class="inputWithIcon">
+    <input type="text" placeholder="Your name">
+    <i class="fa-solid fa-user" aria-hidden="true"></i>
+</div>
+</body>
+</html>

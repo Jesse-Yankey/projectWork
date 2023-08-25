@@ -1,0 +1,138 @@
+@media(min-width:600px) {
+    html {
+        font-size: 70.2%;
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    * {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        transition: all .2s linear;
+    }
+
+    main {
+        width: 60%;
+        height: auto;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: 1px solid black;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+    }
+
+    .container {
+        padding: 4rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 15rem;
+        color: rgba(52, 52, 198, 0.739);
+    }
+
+    .container h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-top: 3.5rem; margin-bottom: 5.5rem;
+        color: rgba(0, 0, 255, 0.822);
+    }
+
+    main .container .select-menu {
+        width: 100%;
+        /* position: absolute; */
+        border: black 3px solid;
+        border-radius: 10px;
+    }
+    .select-menu .select-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 7rem;
+        background-color: white;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .select-btn i {
+        font-size: 25px;
+        transition: 0.3s;
+    }
+    .select-menu.active .select-btn  i {
+        transform: rotate(-180deg);
+    }
+    .select-menu .options {
+        position: relative;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 0.8rem;
+        display: none;
+    }
+    .select-menu.active .options {
+        display: block;
+    }
+    .options .option {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 0 16px;
+        height: 50px;
+        background: #fff;
+    }
+    .options .option:hover{
+        background: #f2f2f2;
+    }
+    .option .option-text {
+        font-size: 18px;
+        color: black;
+    }
+
+    form {
+        margin: 5rem 0;
+        height: 7rem;
+    }
+    .time {
+        height: 7rem;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        border-color: #fff;
+        background-color: #fff;
+        border: black 3px solid;
+    }
+
+    .attendance {
+        width: 23rem;
+        height: auto;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2rem;
+        padding: 13px;
+        border-radius: 18px;
+        color: black;
+        margin: 0 auto;
+    }
+}
