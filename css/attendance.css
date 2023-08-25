@@ -7,9 +7,7 @@
     body {
         height: 100%;
         background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;    
+        margin: 5rem;
     }
 
     * {
@@ -25,19 +23,20 @@
         /* The blue effect */
         filter: blur(8px);
         -webkit-filter: blur(8px);
-    }
+        font-size: 2.5rem;
+        position: relative;
+    } 
 
     main {
-        width: auto;
+        width: 30%;
         height: auto;
         background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-left: 32%;
         padding: 1rem;
         border-radius: 2rem;
         border: 1px solid black;
         box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+        position: absolute;
     }
 
     .container {
@@ -56,6 +55,53 @@
     .icon {
         font-size: 15rem;
         color: rgba(52, 52, 198, 0.739);
+    }
+
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px auto;
+        font-size: 2.5rem;
+        width: 80%;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .content-table thead tr {
+        background-color: #0c7db1;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+    .content-table th, .content-table td {
+        padding: 12px 15px;
+    }
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #0c7db1;
+    }
+    .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: #0c7db1;
+    }
+    
+    .submit {
+        height: auto;
+        width: 18rem;
+        padding: 1.6rem;
+        margin: 0 auto;
+        background-color: #0c7db1;
+        border-radius: 1.3rem;
+        font-size: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #fff;
     }
     
 }
