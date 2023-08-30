@@ -51,9 +51,15 @@
         color: rgba(0, 0, 255, 0.822);
     }
 
-    main .container .select-menu {
+    main {
+        width: 60%;
+        max-width: 60rem;
+        border: black 3px solid;
+        border-radius: 10px;
+    }
+
+    .container .select-menu {
         width: 100%;
-        /* position: absolute; */
         border: black 3px solid;
         border-radius: 10px;
     }

@@ -23,6 +23,7 @@
 
     .form-container {
         width: 60%;
+        max-width: 60rem;
         height: auto;
         background-color: white;
         display: flex;
